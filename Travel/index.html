@@ -1,0 +1,393 @@
+<!--
+Author: TL Narasimha
+
+-->
+<!doctype html>
+<html lang="zxx">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Travel</title>
+  <!-- google fonts -->
+  <link href="//fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <!-- google fonts -->
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style-starter.css">
+  <!-- Template CSS -->
+</head>
+
+
+
+
+
+
+
+
+
+
+<style>
+
+
+
+body {
+  overflow: hidden;
+}
+
+  #Hover_Black button:hover{
+
+background: black;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+  <!--header-->
+  <header id="site-header" class="fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg stroke">
+        <h1><a class="navbar-brand mr-lg-5" href="index.html">
+            Travel
+          </a></h1>
+        <!-- if logo is image enable this   
+      <a class="navbar-brand" href="#index.html">
+          <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+      </a> -->
+        <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+          data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+          <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="packages.html">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Book.html">Book</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+           
+                
+    
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+
+          </ul>
+        </div>
+       
+        <div class="d-lg-block d-none" id="Hover_Black">
+          <a href="contact.html" class="btn btn-style btn-secondary">Get In Touch</a>
+        </div>
+        <!-- toggle switch for light and dark theme -->
+        <div class="mobile-position">
+          <nav class="navigation">
+            <div class="theme-switch-wrapper">
+              <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox">
+                <div class="mode-container">
+                  <i class="gg-sun"></i>
+                  <i class="gg-moon"></i>
+                </div>
+              </label>
+            </div>
+          </nav>
+        </div>
+        <!-- //toggle switch for light and dark theme -->
+      </nav>
+    </div>
+  </header>
+  <!-- //header -->
+ 
+  <!--banner-slider-->
+  <!-- main-slider -->
+  <section class="w3l-main-slider" id="home">
+    <div class="banner-content">
+      <div id="demo-1"
+        data-zs-src='["assets/images/banner1.jpg", "assets/images/banner2.jpg","assets/images/banner3.jpg", "assets/images/banner4.jpg"]'
+        data-zs-overlay="dots">
+        <div class="demo-inner-content">
+          <div class="container">
+            <div class="banner-infhny">
+              <h3>You don't need to go far to find what matters.</h3>
+              <h6 class="mb-3">Discover your next adventure</h6>
+              <div class="flex-wrap search-wthree-field mt-md-5 mt-4">
+                <form action="#" method="post" class="booking-form" onsubmit="return validateForm()">
+                  <div class="row book-form">
+                    <div class="form-input col-md-4 mt-md-0 mt-3">
+                      <select name="selectpicker" class="selectpicker" id="destinationSelect" required>
+                        <option value="" disabled selected hidden>Destination</option>
+                        <option value="dubai">Paris</option>
+                        <option value="africa">Bankok</option>
+                        <option value="america">Maldives</option>
+                        <option value="asia">Greece</option>
+                        <option value="eastern-europe">London</option>
+                        <option value="europe">Singapore</option>
+                        <option value="south-america">Thailand</option>
+                      </select>
+                    </div>
+                    <!-- <div class="form-input col-md-4 mt-md-0 mt-3">
+                      <input type="date" name="" placeholder="Date" required="">
+                    </div> -->
+                    <div class="bottom-btn col-md-4 mt-md-0 mt-3" id="Hover_Black">
+                      <button  class="btn btn-style btn-secondary" ><span class="" 
+                          aria-hidden="true"></span><a href="packages.html" style="color: white;" > Book Now</a></button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /main-slider -->
+  <!-- //banner-slider-->
+
+  <script>
+    function validateForm() {
+      var destinationSelect = document.getElementById("destinationSelect");
+      if (destinationSelect.value === "") {
+        alert("Please select a destination.");
+        return false;
+      }
+      return true;
+    }
+  </script>
+
+
+ 
+
+
+
+
+
+
+
+
+<script>
+
+
+var words = document.getElementsByClassName('word');
+var wordArray = [];
+var currentWord = 0;
+
+words[currentWord].style.opacity = 1;
+for (var i = 0; i < words.length; i++) {
+  splitLetters(words[i]);
+}
+
+function changeWord() {
+  var cw = wordArray[currentWord];
+  var nw = currentWord == words.length-1 ? wordArray[0] : wordArray[currentWord+1];
+  for (var i = 0; i < cw.length; i++) {
+    animateLetterOut(cw, i);
+  }
+  
+  for (var i = 0; i < nw.length; i++) {
+    nw[i].className = 'letter behind';
+    nw[0].parentElement.style.opacity = 1;
+    animateLetterIn(nw, i);
+  }
+  
+  currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
+}
+
+function animateLetterOut(cw, i) {
+  setTimeout(function() {
+		cw[i].className = 'letter out';
+  }, i*80);
+}
+
+function animateLetterIn(nw, i) {
+  setTimeout(function() {
+		nw[i].className = 'letter in';
+  }, 340+(i*80));
+}
+
+function splitLetters(word) {
+  var content = word.innerHTML;
+  word.innerHTML = '';
+  var letters = [];
+  for (var i = 0; i < content.length; i++) {
+    var letter = document.createElement('span');
+    letter.className = 'letter';
+    letter.innerHTML = content.charAt(i);
+    word.appendChild(letter);
+    letters.push(letter);
+  }
+  
+  wordArray.push(letters);
+}
+
+changeWord();
+setInterval(changeWord, 4000);
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+      <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+          scrollFunction()
+        };
+  
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("movetop").style.display = "block";
+          } else {
+            document.getElementById("movetop").style.display = "none";
+          }
+        }
+  
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
+      <!-- //move top -->
+      <script>
+        $(function () {
+          $('.navbar-toggler').click(function () {
+            $('body').toggleClass('noscroll');
+          })
+        });
+      </script>
+  
+    <!-- //footer -->
+  
+  <!-- Template JavaScript -->
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/theme-change.js"></script>
+  <!--/slider-js-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/modernizr-2.6.2.min.js"></script>
+  <script src="assets/js/jquery.zoomslider.min.js"></script>
+  <!--//slider-js-->
+  <script src="assets/js/owl.carousel.js"></script>
+  <!-- script for tesimonials carousel slider -->
+  <script>
+    $(document).ready(function () {
+      $("#owl-demo1").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: false,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+          736: {
+            items: 1,
+            nav: false
+          },
+          1000: {
+            items: 1,
+            nav: false,
+            loop: true
+          }
+        }
+      })
+    })
+  </script>
+  <!-- //script for tesimonials carousel slider -->
+  <!-- stats number counter-->
+  <script src="assets/js/jquery.waypoints.min.js"></script>
+  <script src="assets/js/jquery.countup.js"></script>
+  <script>
+    $('.counter').countUp();
+  </script>
+  <!-- //stats number counter -->
+
+  <!--/MENU-JS-->
+  <script>
+    $(window).on("scroll", function () {
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 80) {
+        $("#site-header").addClass("nav-fixed");
+      } else {
+        $("#site-header").removeClass("nav-fixed");
+      }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+      $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+      $(window).on("resize", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+      });
+    });
+  </script>
+  <!--//MENU-JS-->
+
+  <script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
