@@ -158,10 +158,11 @@ background-color: #fa0c48;
 
 }
 
- #Hover_Black :hover{
+ /* #Hover_Black :hover{
     
-    background: black;
-      }
+    padding-left: -25px;
+    padding-right: -25px;
+      } */
     </style>
 
 
@@ -196,7 +197,38 @@ background-color: #fa0c48;
               <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 <!------------------Form Starts Here----------------------------> <form class="row g-4 mt-3" action="" method="post">
-                    <div class="col-sm-6 col-md-6 col-xl-5">
+                    
+  <div class="input-group-icon">
+    <label class="form-label visually-hidden" for="inputAddress1">Name</label>
+    <input class="form-control input-box form-voyage-control" id="inputAddress1" type="text" name="Name"  placeholder="Name" required />
+    <span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fa fa-user-circle" aria-hidden="true"></i>
+
+
+    </span>
+  </div>
+
+
+  <div class="input-group-icon">
+    <label class="form-label visually-hidden" for="inputAddress1">Email</label>
+    <input class="form-control input-box form-voyage-control" id="inputAddress1" type="text" name="Email"  placeholder="Email" required />
+    <span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fa fa-envelope" aria-hidden="true"></i>
+    </span>
+  </div>
+  
+  
+
+  <div class="input-group-icon">
+    <label class="form-label visually-hidden" for="inputAddress1">Phone Number</label>
+    <input class="form-control input-box form-voyage-control" id="inputAddress1" type="text" name="Email"  placeholder="Phone Number" required />
+    <span class="nav-link-icon text-800 fs--1 input-box-icon">  <i class="fa fa-address-book" aria-hidden="true"></i>
+
+    </span>
+  </div>
+  
+  
+  
+  
+  <div class="col-sm-6 col-md-6 col-xl-5">
                       <div class="input-group-icon">
                         <label class="form-label visually-hidden" for="inputAddress1">Departure</label>
                         <input class="form-control input-box form-voyage-control" id="inputAddress1" type="text" name="Departure"  placeholder="Departure" required />
@@ -233,10 +265,39 @@ background-color: #fa0c48;
                         <span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-user"></i></span>
                       </div>
                     </div>
-                    <div class="col-12 col-xl-10 col-lg-12 d-grid mt-6" id="Hover_Black">
-                      <button class="btn btn-secondary" type="submit">Book Package</button>
+                  
+                  
+                  
+                    <div class="col-sm-6 col-md-6 col-xl-5">
+                      <div class="input-group-icon">
+                        <label class="form-label visually-hidden" for="inputPersonOne">Number of Travelers</label>
+                        <select class="form-select form-voyage-select input-box" name="Persons" id="inputPersonOne" required>
+                          <option selected="selected">Payment</option>
+                          <option>Paris $1650</option>
+                          <option>Bankok $1850</option>
+                          <option>Maldives $1350</option>
+                          <option>Greece $1650</option>
+                          <option>Thailand $1750</option>
+                          <option>Singapore $1950</option>
+
+
+
+
+                        </select>
+                        <span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fa fa-university" aria-hidden="true"></i>
+                        </span>
+                      </div>
                     </div>
+                  
+                  
+                  
+                  
                   </form>
+                    <div class="col-12 col-xl-10 col-lg-12 d-grid mt-6" id="Hover_Black">
+                      <a href="conform_booking.html" target="_blank"><button class="btn btn-secondary" type="submit">Book Package</button>
+                      </a></div>
+                      
+                  
                 </div>
                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                   <!-- Form for the second tab (Flight Booking) can be added here -->
